@@ -1,0 +1,23 @@
+{
+  "name": "frontend-nanodegree-arcade-game",
+  "version": "1.0.0",
+  "description": "Arcade game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasreis54/arcade-game.git"
+  },
+  "author": "Elias Reis <eliasreis54@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliasreis54/arcade-game/issues"
+  },
+  "homepage": "https://github.com/eliasreis54/arcade-game#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
