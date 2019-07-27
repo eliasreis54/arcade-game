@@ -1,15 +1,22 @@
-var gulp        = require('gulp');
+var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
-gulp.task('default', ['browser-sync'], function() {
-    gulp.watch(['./public/*.*'], ['browser-sync']);
-});
+function reload(done) {
+  browserSync.reload();
+  done();
+}
 
-// Static server
-gulp.task('browser-sync', function() {
+// Server + watching scss/js files
+gulp.task('default', function () {
+  gulp.watch("./public/**/*.js", gulp.parallel(reload));
+  gulp.watch("./public/**/*.css", gulp.parallel(reload));
+  gulp.watch("./public/*.html", gulp.parallel(reload));
+
     browserSync.init({
-        server: {
-            baseDir: "./public"
-        }
+        server: './public',
+        ui: {
+            port: 8080
+        },
+        port: 8090,
     });
 });

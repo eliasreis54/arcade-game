@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Effective JavaScript: Frogger</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
     <div id="myModal" class="modal">
-        <!-- Modal content -->
         <div class="modal-content">
-          <h1>Choose your player</h1>
-          <div class="players-modal">
-              <div class="player-diapley">
-                <img src="./images/char-boy.png" />
-              </div>
-              <div class="player-diapley">
-                <img src="./images/char-cat-girl.png" />
-              </div>
-              <div class="player-diapley">
-                <img src="./images/char-horn-girl.png" />
-              </div>
-              <div class="player-diapley">
-                <img src="./images/char-pink-girl.png" />
-              </div>
-              <div class="player-diapley">
-                <img src="./images/char-princess-girl.png" />
-              </div>
-          </div>
+            <h1>Choose your player</h1>
+            <div class="players-modal">
+                <button class="player-displayed" onclick="createPlayer(30, 'char-boy.png')">
+                    <img src="./images/char-boy.png" />
+                    <p>Little boy</p>
+                    <p>Speed 1</p>
+                </button>
+                <button class="player-displayed" onclick="createPlayer(100, 'char-cat-girl.png')">
+                    <img src="./images/char-cat-girl.png" />
+                    <p>Cat girl</p>
+                    <p>Speed 5</p>
+                </button>
+                <button class="player-displayed" onclick="createPlayer(40, 'char-horn-girl.png')">
+                    <img src="./images/char-horn-girl.png" />
+                    <p>Pinces girl</p>
+                    <p>Speed 3</p>
+                </button>
+                <button class="player-displayed" onclick="createPlayer(35, 'char-pink-girl.png')">
+                    <img src="./images/char-pink-girl.png" />
+                    <p>Pink girl</p>
+                    <p>Speed 2</p>
+                </button>
+                <button class="player-displayed" onclick="createPlayer(45, 'char-princess-girl.png')">
+                    <img src="./images/char-princess-girl.png" />
+                    <p>Queen girlf</p>
+                    <p>Speed 4</p>
+                </button>
+            </div>
         </div>
-      </div>
+    </div>
 </body>
-</html>
 
+</html>
